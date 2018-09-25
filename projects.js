@@ -53,4 +53,42 @@ const createProjectCards = () => {
 
 
 createProjectCards();
+
+
+// target divs
+
+const bioDiv = document.getElementById('bio')
+
+const techDiv = document.getElementById('technology')
+
+// click event functions
+
+const techButtonMessage = () => {
+    console.log("tech button clicked")
+    techDiv.textContent =  "text button clicked"
     
+};
+
+const navButtonMessage = () => {
+    console.log("navbutton clicked")
+    let pEl = document.createElement("p");
+    let bioText = "navButton clicked"
+    pEl.textContent = bioText;
+    bioDiv.appendChild(pEl);
+    techDiv.style.display = "none";
+};
+    
+
+// buttons
+
+const navButton = document.getElementById('navToBio') 
+navButton.addEventListener('click', navButtonMessage)
+
+const techButton = document.getElementById('navToTechnologies')
+techButton.addEventListener('click', techButtonMessage)
+
+
+
+
+
+
