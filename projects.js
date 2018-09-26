@@ -24,11 +24,6 @@ let projectsPage = {
         ],
     };
 
-    
-    
- 
-
-
 const writeToDom = (stringToPrint, divId) => {
     const selectedDiv = document.getElementById(divId);
     selectedDiv.innerHTML = stringToPrint;
@@ -51,6 +46,20 @@ const createProjectCards = () => {
     writeToDom(newString, "projectsPage")
 };
 
+document.getElementById('navToBio').addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log("clicked");
+  });
+document.getElementById('navToTechnologies').addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log("clicked");
+  });
+document.getElementById('navToProjects').addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log("clicked");
+  });
 
 createProjectCards();
+
+
     
