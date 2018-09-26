@@ -40,23 +40,69 @@ const createProjectCards = () => {
         newString += `<a href="https://${projects.url}" target="_blank">View Project Here</a>`
         newString += `<a href="https://${projects.githubUrl}" target="_blank">View Github Here</a>`
         newString += '</div>'
-        writeToDom(newString, "projects")
+        writeToDom(newString, "projectsPage")
     }
     
 };
 
-document.getElementById('navToBio').addEventListener("click", (e) => {
-    e.preventDefault();
-    console.log("clicked");
-  });
-document.getElementById('navToTechnologies').addEventListener("click", (e) => {
-    e.preventDefault();
-    console.log("clicked");
-  });
-document.getElementById('navToProjects').addEventListener("click", (e) => {
-    e.preventDefault();
-    console.log("clicked");
-  });
+const bioNav = document.getElementById('navToBio');
+const bio = document.getElementById('bioPage');
+const techNav =  document.getElementById('navToTechnologies');
+const tech = document.getElementById('technologyPage');
+const projectNav = document.getElementById('navToProjects');
+const allProjects = document.getElementById('projectsPage');
+
+
+
+
+bioNav.addEventListener("click", (e) => {
+    if (bio.style.display = 'none') {
+        bio.style.display = 'block';
+        
+        
+
+    } else {
+        bio.style.display = 'none';
+        
+        
+    }
+}, false);
+
+techNav.addEventListener("click", (e) => {
+    if (tech.style.display = 'none') {
+        tech.style.display = 'block';
+        
+    } else {
+        tech.style.display = 'none'
+        
+    }
+    
+}, false);
+ 
+
+projectNav.addEventListener("click", (e) => {
+    if (allProjects.style.display = 'none') {
+        allProjects.style.display = 'block';
+        
+    } else {
+        allProjects.style.display = 'none'
+        
+    }
+    
+}, false);
+ 
+//     e.preventDefault();
+//     // console.log("clicked");
+//     document.getElementById("technologiespage").style.display = 'none';
+//   });
+// document.getElementById('navToTechnologies').addEventListener("click", (e) => {
+//     e.preventDefault();
+//     console.log("clicked");
+//   });
+// document.getElementById('navToProjects').addEventListener("click", (e) => {
+//     e.preventDefault();
+//     console.log("clicked");
+//   });
 
 createProjectCards();
 
