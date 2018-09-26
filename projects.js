@@ -27,6 +27,8 @@ const writeToDom = (stringToPrint, divId) => {
     selectedDiv.innerHTML = stringToPrint;
 };
 
+let counter = 0;
+
 const createProjectCards = () => {
 
     let newString = '';
@@ -53,43 +55,47 @@ const projectNav = document.getElementById('navToProjects');
 const allProjects = document.getElementById('projectsPage');
 
 
-
-
 bioNav.addEventListener("click", (e) => {
-    if (bio.style.display = 'none') {
-        bio.style.display = 'block';
-        
-        
+    tech.remove();
+    allProjects.remove();
+    bio.innerHTML;
+    counter++;
+    e.preventDefault();
+    
 
-    } else {
-        bio.style.display = 'none';
-        
-        
-    }
-}, false);
+});
+
 
 techNav.addEventListener("click", (e) => {
-    if (tech.style.display = 'none') {
-        tech.style.display = 'block';
-        
-    } else {
-        tech.style.display = 'none'
-        
-    }
+    bio.remove();
+    allProjects.remove();
+    tech.innerHTML;
+    counter++;
+    e.preventDefault();
     
-}, false);
- 
+});
 
 projectNav.addEventListener("click", (e) => {
-    if (allProjects.style.display = 'none') {
-        allProjects.style.display = 'block';
-        
-    } else {
-        allProjects.style.display = 'none'
-        
-    }
+    bio.remove();
+    tech.remove();
+    allProjects.innerHTML;
+    counter++;
+    e.preventDefault();
     
-}, false);
+});
+ 
+ 
+
+// projectNav.addEventListener("click", (e) => {
+//     if (allProjects.style.display = 'none') {
+//         allProjects.style.display = 'block';
+        
+//     } else {
+//         allProjects.style.display = 'none'
+        
+//     }
+    
+// }, false);
  
 //     e.preventDefault();
 //     // console.log("clicked");
