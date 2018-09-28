@@ -54,6 +54,9 @@ const tech = document.getElementById('technologyPage');
 const projectNav = document.getElementById('navToProjects');
 const allProjects = document.getElementById('projectsPage');
 
+const navDiv = () => {
+
+
 
 bioNav.addEventListener("click", (e) => {
     tech.remove();
@@ -83,6 +86,8 @@ projectNav.addEventListener("click", (e) => {
     e.preventDefault();
     
 });
+
+};
  
  
 
@@ -111,6 +116,7 @@ projectNav.addEventListener("click", (e) => {
 //   });
 
 createProjectCards();
+navDiv();
 
 
     
