@@ -1,5 +1,5 @@
-const printToDom = (stringToPrint, divId) => {
-  const selectedDiv = document.getElementById(divId);
+const printToDom = stringToPrint => {
+  const selectedDiv = document.getElementById("projectsPage");
   selectedDiv.innerHTML = stringToPrint;
 };
 
