@@ -49,13 +49,19 @@ $(document).ready(function() {
   $("#technologyPage").hide();
   $("#navToTechnologies").on("click", function() {
     $("#technologyPage").toggle();
+    $("#bioPage").hide();
+    $("#projectsPage").hide();
   });
   $("#projectsPage").hide();
   $("#navToProjects").on("click", function() {
     $("#projectsPage").toggle();
+    $("#bioPage").hide();
+    $("#technologyPage").hide();
   });
   $("#navToBio").on("click", function() {
     $("#bioPage").toggle();
+    $("#technologyPage").hide();
+    $("#projectsPage").hide();
   });
 });
 
