@@ -3,34 +3,29 @@ import 'bootstrap';
 import './index.scss';
 import axios from 'axios';
 
+const getProjects = () => axios.get('https://api.myjson.com/bins/1cgbmu');
+
 const projectsBuilder = (projects) => {
   let newString = '';
   projects.forEach((project) => {
-    newString += `<div class='col-sm-4  pet-card'>;
-     <div class='card border-success'>;
-    <div class='card-header bg-transparent border-success'>${project.title};
-    <div class='card-body text-success'>;
-    <h5 class='card-title'>${project.color}</h5>;
-    <p class='card-text petSkill'>${project.description}</p>;
-    <div class='card-footer bg-transparent border-success petType'>${project.available};
-    </div>;
-    </div>;
-    </div>;
-    </div>;
-    </div>`;
+    newString += `
+      <div id="projectsPage">
+          <h6>${project.title}</h6>
+          <h6>${project.description}</h6>
+          <h6>${project.technologiesUsed}</h6>
+          <a href="https://${project.url}" target="_blank">View Project Here</a>
+          <a href="https://${project.githubUrl}" target="_blank">View Github Here</a>
+      </div>`;
   });
   $('#projectsPage').append(newString);
 };
 
-const getProjects = () => axios.get('../db/projects.json');
-
 getProjects()
   .then((data) => {
-    projectsBuilder(data.projects);
+    projectsBuilder(data.data.projects);
   })
   .catch((error) => {
     console.error({ error });
   });
-
 
 $('#projectsPage').show();
