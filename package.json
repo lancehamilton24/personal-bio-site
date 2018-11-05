@@ -1,24 +1,21 @@
 {
-  "name": "webpack-intro",
+  "name": "personal-bio-site",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "webpack.config.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "NODE_ENV=production webpack",
-    "lint": "eslint ./src --ext .js",
+    "lint": "eslint ./src --ext .js --fix",
     "dev": "NODE_ENV=development webpack-dev-server --content-base dist --hot",
     "start": "npm run lint && npm run dev"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lancehamilton24/webpack-intro.git"
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.4"
   },
-  "author": "Lance Hamilton",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/lancehamilton24/webpack-intro/issues"
-  },
-  "homepage": "https://github.com/lancehamilton24/webpack-intro#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -29,16 +26,23 @@
     "eslint-loader": "^2.1.1",
     "eslint-plugin-import": "^2.14.0",
     "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^2.0.0",
     "html-webpack-plugin": "^2.30.1",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.20.2",
+    "url-loader": "^1.1.2",
     "webpack": "^3.11.0",
     "webpack-dev-server": "^2.11.1"
   },
-  "dependencies": {
-    "bootstrap": "^4.1.3",
-    "jquery": "^3.3.1",
-    "popper.js": "^1.14.4"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lancehamilton24/personal-bio-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lancehamilton24/personal-bio-site/issues"
+  },
+  "homepage": "https://github.com/lancehamilton24/personal-bio-site#readme"
 }
