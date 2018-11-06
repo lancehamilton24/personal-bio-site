@@ -3,6 +3,24 @@ import 'bootstrap';
 import './index.scss';
 import axios from 'axios';
 
+$('#navToBio').on('click', () => {
+  $('#bioPage').toggle();
+  $('#technologyPage').hide();
+  $('#projectsPage').hide();
+});
+$('#technologyPage').hide();
+$('#navToTechnologies').on('click', () => {
+  $('#technologyPage').toggle();
+  $('#bioPage').hide();
+  $('#projectsPage').hide();
+});
+$('#projectsPage').hide();
+$('#navToProjects').on('click', () => {
+  $('#projectsPage').toggle();
+  $('#bioPage').hide();
+  $('#technologyPage').hide();
+});
+
 const getProjects = () => axios.get('https://api.myjson.com/bins/1cgbmu');
 
 const projectsBuilder = (projects) => {
@@ -27,5 +45,3 @@ getProjects()
   .catch((error) => {
     console.error({ error });
   });
-
-$('#projectsPage').show();
