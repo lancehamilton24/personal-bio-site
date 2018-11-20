@@ -3,3 +3,24 @@
 body {
     background-color: aquamarine;
 }
+
+.footer{
+    height: 150px;
+    background-color: #FFC312;
+    width:100%;
+    position: relative;
+    bottom:0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+.footer img{
+    padding: 20px;
+}
+.footer h5{
+width:100%;
+}
