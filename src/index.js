@@ -19,6 +19,7 @@ $('#navToProjects').on('click', () => {
   $('#projectsPage').toggle();
   $('#bioPage').hide();
   $('#technologyPage').hide();
+  $('.false').hide();
 });
 
 const getProjects = () => axios.get('https://api.myjson.com/bins/1cgbmu');
@@ -27,13 +28,18 @@ const projectsBuilder = (projects) => {
   let newString = '';
   projects.forEach((project) => {
     newString += `
-      <div id="projectsPage">
-          <h6>${project.title}</h6>
-          <h6>${project.description}</h6>
-          <h6>${project.technologiesUsed}</h6>
-          <a href="https://${project.url}" target="_blank">View Project Here</a>
-          <a href="https://${project.githubUrl}" target="_blank">View Github Here</a>
-      </div>`;
+    <div class="col-sm-4 projectsCard ${project.available}">
+      <div class="card">
+        <img class="card-img-top" src="${project.screenshot}" alt="">
+          <div class="projectsBody">
+            <h6>${project.title}</h6>
+            <h6>${project.description}</h6>
+            <h6>${project.technologiesUsed}</h6>
+            <a href="https://${project.url}" target="_blank">View Project Here</a>
+            <a href="https://${project.githubUrl}" target="_blank">View Github Here</a>
+          </div>
+      </div>
+    </div>`;
   });
   $('#projectsPage').append(newString);
 };
