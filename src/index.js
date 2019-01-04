@@ -2,25 +2,11 @@ import $ from 'jquery';
 import 'bootstrap';
 import './index.scss';
 import axios from 'axios';
+import createNavbar from './components/MyNavbar/MyNavbar';
 
-$('#navToBio').on('click', () => {
-  $('#bioPage').toggle();
-  $('#technologyPage').hide();
-  $('#projectsPage').hide();
-});
-$('#technologyPage').hide();
-$('#navToTechnologies').on('click', () => {
-  $('#technologyPage').toggle();
-  $('#bioPage').hide();
-  $('#projectsPage').hide();
-});
-$('#projectsPage').hide();
-$('#navToProjects').on('click', () => {
-  $('#projectsPage').toggle();
-  $('#bioPage').hide();
-  $('#technologyPage').hide();
-  $('.false').hide();
-});
+const initializeApp = () => {
+  createNavbar();
+};
 
 const getProjects = () => axios.get('https://api.myjson.com/bins/1cgbmu');
 
@@ -51,3 +37,18 @@ getProjects()
   .catch((error) => {
     console.error({ error });
   });
+
+const footerTab = () => {
+  let newString = '';
+  newString += `
+  <div class ="footer">
+  <div><a href="https://www.linkedin.com/in/lance-hamilton-766770125/" target="_blank"><img src="./img/linkedin.png" alt="instagram"></a></div>
+      <div><a href="https://www.linkedin.com/in/lance-hamilton-766770125/" target="_blank"><img src="./img/linkedin.png" alt="instagram"></a></div>
+
+      <h5> &copy; 2019 Lance Hamilton </h5>
+</div>`;
+  $('#footer').append(newString);
+};
+
+footerTab();
+initializeApp();
