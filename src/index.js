@@ -3,11 +3,13 @@ import 'bootstrap';
 import './index.scss';
 import createNavbar from './components/MyNavbar/MyNavbar';
 import initializeProjectsPage from './components/Projects/projects';
+import initializeTechnologyPage from './components/MyTechnologies/technologies';
 // import pictureCarousel from './components/Biography/Biography';
 
 const initializeApp = () => {
   createNavbar();
   initializeProjectsPage();
+  initializeTechnologyPage();
   // pictureCarousel();
 };
 

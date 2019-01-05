@@ -3,7 +3,7 @@ import projectsData from '../../helpers/data/projectsData';
 
 const projectsBuilder = (projectsArray) => {
   let projectString = '';
-  projectString += '<h1 class="projects-header text-center">projectS</h1>';
+  projectString += '<h1 class="projects-header text-center">Projects</h1>';
   projectsArray.forEach((project) => {
     projectString += `
     <div class="col-sm-4 projectsCard ${project.available}">
