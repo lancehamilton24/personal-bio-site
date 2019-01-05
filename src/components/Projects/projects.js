@@ -8,7 +8,7 @@ const projectsBuilder = (projectsArray) => {
     projectString += `
     <div class="col-sm-4 projectsCard ${project.available}">
       <div class="card">
-        <img class="card-img-top" src="${project.screenshot}" alt="">
+        <img class="card-img" src="${project.screenshot}" alt="">
           <div class="projectsBody">
             <h6>${project.title}</h6>
             <h6>${project.description}</h6>
