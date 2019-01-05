@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+#introContainer {
+  padding: 10%;
+  background-color: aquamarine;
+}
+
+#intro {
+  text-align: center;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+
+    h1 {
+      font-size: 5vw;
+    }
+    h3 {
+      font-size: 3vw;
+    }
+}
