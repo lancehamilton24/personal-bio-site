@@ -5,6 +5,7 @@ import createNavbar from './components/MyNavbar/MyNavbar';
 import initializeProjectsPage from './components/Projects/projects';
 import initializeTechnologyPage from './components/MyTechnologies/technologies';
 import initializeIntroPage from './components/AboutMe/aboutMe';
+import initializeContactPage from './components/ContactMe/contactMe';
 // import pictureCarousel from './components/Biography/Biography';
 
 const initializeApp = () => {
@@ -12,6 +13,7 @@ const initializeApp = () => {
   initializeProjectsPage();
   initializeTechnologyPage();
   initializeIntroPage();
+  initializeContactPage();
   // pictureCarousel();
 };
 

@@ -44,6 +44,10 @@ const createNavbar = () => {
           <a class="nav-link" id="navToProjects" href="#">Projects</a><span class="sr-only">(current)</span></a>
 
         </li>
+        <li class="nav-item active">
+          <a class="nav-link" id="navToContact" href="#contactPage">Contact Me</a><span class="sr-only">(current)</span></a>
+
+        </li>
       </div>
   </nav>`;
   $('#myNavbar').html(domString);
