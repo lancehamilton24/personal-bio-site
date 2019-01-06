@@ -1,23 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
 #technologyContainer {
   height: 100%;
-  background-color: rgb(145, 66, 66);
 }
 
 #technologyPage {
-  padding: 6% 0% 0% 0%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  color: rgb(98, 175, 149);
+  justify-content: center;
+  padding: 4% 0% 0% 0%;
+  font-family: 'Oswald', sans-serif;
+
+  h1 {
+    font-size: 4vw;
+  }
+  img {
+    width: 200px;
+    height: 13%;
+  }
+  hr {
+    width: 75%;
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgb(98, 175, 149);
+  }
 }
 
-.technologyCard {
-  display:flex;
+.techIcons {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.card-img-top {
-  height: 15%;
-  width: 100%;
-  object-position: 0 0;
-  margin: 0 auto;
-  padding: 10%;
+.technologyCard {
+  margin: 8% 3% 2% 0%;
 }
