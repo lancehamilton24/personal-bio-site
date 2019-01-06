@@ -16,9 +16,15 @@ const introBuilder = () => {
 const bioBuilder = () => {
   let domString = '';
   domString += `<div>
+  <div id='aboutHeader'>  
    <h1>About Me</h1>
-   <hr>
-   <img class='card-img' src="${bioPhoto}" alt="linkedin">
+  </div>
+  <hr>
+  <div id='bioImage'>
+  <img class='card-img-bio' src="${bioPhoto}" alt="linkedin">
+  <p>Nasvhille Native djkl;ajsdfkjasdlk;jfklasdjfklsd;a
+     dkasjfkldsajfkldsjafklasdjfkljsdklfjdslkjfksdljflks</p>
+  </div>
    </div>`;
   $('#bioPage').html(domString);
 };
