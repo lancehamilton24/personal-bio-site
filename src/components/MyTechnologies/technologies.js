@@ -4,17 +4,14 @@ import html5 from '../../images/html-5.png';
 
 const technologyBuilder = () => {
   let domString = '';
-  domString += `<div class='card technologyCard'>
+  domString += `
+   <div class='techIcons'>
+   <div class='technologyCard'>
    <div><img class='card-img-top' src="${html5}" alt="html5"></div>
-   <div><img class='card-img-top' src="${html5}" alt="linkedin"></div>
-   <div><img class='card-img-top' src="${html5}" alt="linkedin"></div>
-   <div><img class='card-img-top' src="${html5}" alt="linkedin"></div>
-   <div><img class='card-img-top' src="${html5}" alt="linkedin"></div>
-   <div><img class='card-img-top' src="${html5}" alt="linkedin"></div>
-   <div><img class='card-img-top' src="${html5}" alt="linkedin"></div>
-   <div><img class='card-img-top' src="${html5}" alt="linkedin"></div>
-   <div><img class='card-img-top' src="${html5}" alt="linkedin"></div>
-   <div><img class='card-img-top' src="${html5}" alt="linkedin"></div>
+   </div>
+   <div class='technologyCard'>
+   <div><img class='card-img-top' src="${html5}" alt="html5"></div>
+   </div>
    </div>`;
   $('#technologyPage').html(domString);
 };

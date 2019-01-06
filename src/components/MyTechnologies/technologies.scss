@@ -1,23 +1,22 @@
 #technologyContainer {
   height: 100%;
-  background-color: rgb(145, 66, 66);
 }
 
 #technologyPage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   padding: 6% 0% 0% 0%;
 }
 
-.technologyCard {
-  display:flex;
+.techIcons {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .card-img-top {
   height: 15%;
   width: 100%;
-  object-position: 0 0;
-  margin: 0 auto;
   padding: 10%;
 }
