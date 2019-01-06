@@ -5,20 +5,16 @@ import projectsData from '../../helpers/data/projectsData';
 // <img class="card-img" src="${project.screenshot}" alt="">
 const projectsBuilder = (projectsArray) => {
   let projectString = '';
-  projectString += '<h1 class="projects-header text-center">Projects</h1>';
+  projectString += '<h1 class="projects-header text-center">Projects</h1><hr>';
   projectsArray.forEach((project) => {
     projectString += `
-    <div class="col-sm-4 projectsCard ${project.available}">
-      <div class="card">
-
-          <div class="projectsBody">
+    <div class ="projectsCard">
+    <div class="card ${project.available}">
+            <img class="card-img" src="${project.screenshot}" alt="">
             <h6>${project.title}</h6>
-            <h6>${project.description}</h6>
-            <h6>${project.technologiesUsed}</h6>
             <a href="https://${project.url}" target="_blank">View Project Here</a>
             <a href="https://${project.githubUrl}" target="_blank">View Github Here</a>
-          </div>
-      </div>
+    </div>
     </div>`;
   });
   $('#projectsPage').html(projectString);
