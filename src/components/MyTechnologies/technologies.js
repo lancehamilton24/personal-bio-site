@@ -2,7 +2,7 @@ import $ from 'jquery';
 import './technologies.scss';
 import html5 from '../../images/html-5.png';
 import picCSS from '../../images/CSS.png';
-import github from '../../images/github.png';
+import github from '../../images/github1.png';
 import picReact from '../../images/react.png';
 import picFirebase from '../../images/firebase.png';
 import javascript from '../../images/javascript.png';
@@ -16,7 +16,7 @@ const technologyBuilder = () => {
   let domString = '';
   domString += `
    <div>
-   <h1>Technologies</h1>
+   <h1>TECHNOLOGIES</h1>
    <hr>
    <div class='techIcons'>
    <div class='technologyCard'>
