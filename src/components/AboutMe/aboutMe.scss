@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
 #introContainer {
-  padding: 21%;
+  padding: 3%;
+  height: 100%;
   background-color: aquamarine;
 }
 
 #intro {
   text-align: center;
   color: white;
+  padding: 15% 2% 0% 2%;
   font-family: 'Oswald', sans-serif;
 
     h1 {
@@ -19,7 +21,7 @@
 }
 
 #bioContainer {
-  padding: 2% 10%;
+  height: 100%;
   background-color: #FFC312;
 }
 
@@ -27,6 +29,7 @@
   text-align: center;
   color: white;
   font-family: 'Oswald', sans-serif;
+  padding: 6% 0% 0% 0%;
 
     h1 {
       font-size: 5vw;

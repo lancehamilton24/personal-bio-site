@@ -1,6 +1,8 @@
 import $ from 'jquery';
+import './projects.scss';
 import projectsData from '../../helpers/data/projectsData';
 
+// <img class="card-img" src="${project.screenshot}" alt="">
 const projectsBuilder = (projectsArray) => {
   let projectString = '';
   projectString += '<h1 class="projects-header text-center">Projects</h1>';
@@ -8,7 +10,7 @@ const projectsBuilder = (projectsArray) => {
     projectString += `
     <div class="col-sm-4 projectsCard ${project.available}">
       <div class="card">
-        <img class="card-img" src="${project.screenshot}" alt="">
+
           <div class="projectsBody">
             <h6>${project.title}</h6>
             <h6>${project.description}</h6>
