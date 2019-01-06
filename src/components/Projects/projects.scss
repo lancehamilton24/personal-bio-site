@@ -1,8 +1,29 @@
 #projectsContainer {
   height: 100%;
-  background-color: aquamarine;
+  background-color: rgb(98, 175, 149);
 }
 
 #projectsPage {
   padding: 6% 0% 0% 0%;
+  color: white;
+  text-align: center;
+
+  h1 {
+    font-size: 4vw;
+  }
+  hr {
+    width: 75%;
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px white;
+  }
+
+.projectsCard {
+  height: 50%;
+  width: 25%;
+  display: inline-block;
+  text-align: center;
+  padding: 2%;
+  color: rgb(98, 175, 149);
+}
 }

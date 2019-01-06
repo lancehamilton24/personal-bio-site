@@ -1,17 +1,36 @@
 #contactContainer {
-  height: 100%;
+  height: 60%;
   background-color: rgb(145, 66, 66);
 }
 
+
 #contactPage {
-  padding: 6% 0% 0% 0%;
+  text-align: center;
+  color: white;
+  padding: 2% 0% 0% 0%;
+  font-family: 'Oswald', sans-serif;
+
+    h1 {
+    font-size: 4vw;
+    }
+    hr {
+      width: 75%;
+      height: 12px;
+      border: 0;
+      box-shadow: inset 0 12px 12px -12px white;
+    }
 }
 
 .contactImg {
-  height: 10%;
-  width: 10%;
+  height: 150px;
+  width: 150px;
 }
 
-// .contactCard {
-//   display: flex;
-// }
+.contactCard {
+  display: flex;
+  justify-content: center;
+}
+
+#contactMe {
+  padding: 5%;
+}
