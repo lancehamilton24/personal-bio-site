@@ -1,16 +1,20 @@
-### Personal Bio Site
-### How to run this project
-* Use npm to install http-server in your terminal:
+# Personal Bio Site
+This projects is a personal biography website that tells you a little about my self and my programming background. 
+
+### How to run this app
+* Clone the project and install all dependencies using the command line:
 ```sh
-npm install -g http-server
+npm install
 ```
-* Run the server in your terminal
+* Rename apiKeys.json.example file to apiKeys.json
+* Create a new project in Firebase and add your api keys to apiKeys.json. 
+* Run the server in terminal:
 ```sh
-hs -p 9999
+npm start
 ```
-* Open chrome and navigate to:
-```
-localhost:9999
-```
-* Use npm to install package.json
-* Use npm to install package-lock.json
+
+## Screenshots
+
+![homepage](./src/images/screenshot.png)
+![bio](./src/images/screenshot1.png)
+![tech](./src/images/screenshot2.png)
