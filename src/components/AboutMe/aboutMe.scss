@@ -13,16 +13,22 @@
   font-family: 'Oswald', sans-serif;
 
     h1 {
-      font-size: 5vw;
+      font-size: 6vw;
     }
     h3 {
       font-size: 3vw;
+    }
+    hr {
+      width: 75%;
+      height: 12px;
+      border: 0;
+      box-shadow: inset 0 12px 12px -12px white;
     }
 }
 
 #bioContainer {
   height: 100%;
-  background-color: rgb(226, 187, 70);
+  background-color: rgb(62, 63, 114);
 }
 
 #bioPage {
@@ -32,16 +38,36 @@
   padding: 6% 0% 0% 0%;
 
     h1 {
-      font-size: 5vw;
+      font-size: 4vw;
     }
     h3 {
       font-size: 3vw;
     }
-    img {
-      height: 20%;
-      width: 15%;
-    }
     hr {
-      width: 50%;
+      width: 75%;
+      height: 12px;
+      border: 0;
+      box-shadow: inset 0 12px 12px -12px white;
     }
+}
+
+#aboutHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bioImage {
+  display: flex;
+  padding: 3%;
+  #bioText {
+    font-size: 1.5vw;
+    margin: 0% 10% 10% 4%; 
+    text-align: left;
+  }
+}
+
+.card-img-bio {
+  height: 60%;
+  width: 50%;
 }

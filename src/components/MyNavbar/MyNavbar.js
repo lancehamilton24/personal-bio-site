@@ -29,11 +29,11 @@ const createNavbar = () => {
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+    
+    <div class="collapse navbar-collapse mx-auto order-0" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" id="navToBio" href="#bioContainer">Bio<span class="sr-only">(current)</span></a>
+          <a class="nav-link mx-auto" id="navToBio" href="#bioContainer">About Me<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" id="navToTechnologies" href="#technologyContainer">Technologies</a><span class="sr-only">(current)</span></a>
@@ -43,7 +43,7 @@ const createNavbar = () => {
           <a class="nav-link" id="navToProjects" href="#projectsContainer">Projects</a><span class="sr-only">(current)</span></a>
 
         </li>
-        <li class="nav-item active">
+        <li class="nav-item- active">
           <a class="nav-link" id="navToContact" href="#contactContainer">Contact Me</a><span class="sr-only">(current)</span></a>
 
         </li>
