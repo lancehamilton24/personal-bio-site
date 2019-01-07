@@ -1,20 +1,19 @@
 {
     "project1": {
-      "title": "Cool Project",
+      "title": "Animal Adoption",
       "screenshot": "http://gotoflashgames.com/files/file/033.jpg",
       "description": "This is the best project",
-      "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
       "available": true,
-      "url": "https://github.com/nss-evening-cohort-8/js-part-deux",
-      "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
+      "url": "animal-adoption-2b4bf.firebaseapp.com/",
+      "githubUrl": "github.com/lancehamilton24/animal-adoption"
     },
     "project2": {
-      "title": "Cool Project",
+      "title": "Sorting Hat",
       "screenshot": "http://gotoflashgames.com/files/file/033.jpg",
       "description": "This is the best project",
       "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
       "available": false,
-      "url": "https://github.com/nss-evening-cohort-8/js-part-deux",
-      "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
+      "url": "https://sorting-hat-28e3e.firebaseapp.com",
+      "githubUrl": "https://github.com/lancehamilton24/sorting-hat"
     }
 }
