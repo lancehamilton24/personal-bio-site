@@ -1,7 +1,7 @@
 {
     "project1": {
       "title": "Animal Adoption",
-      "screenshot": "http://gotoflashgames.com/files/file/033.jpg",
+      "screenshot": "http://www.aacnj.org/uploads/1/1/8/4/118490762/8_orig.png",
       "description": "This is the best project",
       "available": true,
       "url": "animal-adoption-2b4bf.firebaseapp.com/",
@@ -9,7 +9,7 @@
     },
     "project2": {
       "title": "Sorting Hat",
-      "screenshot": "http://gotoflashgames.com/files/file/033.jpg",
+      "screenshot": "https://images.pottermore.com/bxd3o8b291gf/nt4ZV4578WQWcCUK68QIq/9538ef0e87518551344b2b930a118690/The-Sorting-Ceremony.png?w=1024",
       "description": "This is the best project",
       "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
       "available": false,
@@ -18,7 +18,7 @@
     },
     "project3": {
       "title": "To-Do",
-      "screenshot": "http://gotoflashgames.com/files/file/033.jpg",
+      "screenshot": "https://cdn2.iconfinder.com/data/icons/flat-productivity-at-work/256/To-Do_List-512.png",
       "description": "This is the best project",
       "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
       "available": false,
